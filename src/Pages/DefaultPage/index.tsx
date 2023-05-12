@@ -1,7 +1,7 @@
 import Header from "Components/Header";
 import { Outlet } from "react-router";
 
-const HomePage = () => {
+const DefaultPage = () => {
     return (
         <div className='h-full'>
             <section className='bg-main-blue sm:w-full px-4 sm:py-8 sm:px-24'>
@@ -12,4 +12,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default DefaultPage;

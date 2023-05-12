@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
+import DefaultPage from './Pages/DefaultPage';
 import MainPage from 'Pages/MainPage';
 
 const Rotas = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<HomePage/>}>
+                <Route path='/' element={<DefaultPage/>}>
                     <Route index element={<MainPage/>}/>
                 </Route>
             </Routes>
