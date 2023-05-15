@@ -38,24 +38,24 @@ const Footer = () => {
                     </div>
 
                     <div className='flex flex-col justify-between h-ful text-gray-400 font-manrope h-52'>
-                        <div className='font-bold text-black cursor-pointer'>Landings</div>
-                        <div className='cursor-pointer'>Home</div>
-                        <div className='cursor-pointer'>Products</div>
-                        <div className='cursor-pointer'>Services</div>
+                        <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Landings</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Home</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Products</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Services</div>
                     </div>
 
                     <div className='flex flex-col justify-between h-ful text-gray-400 font-manrope h-52'>
-                        <div className='font-bold text-black text-lg cursor-pointer'>Company</div>
-                        <div className='cursor-pointer'>Home</div>
-                        <div className='cursor-pointer'>Careers</div>
-                        <div className='cursor-pointer'>Services</div>
+                        <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Company</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Home</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Careers</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Services</div>
                     </div>
 
                     <div className='flex flex-col justify-between h-ful text-gray-400 font-manrope h-52'>
-                        <div className='font-bold text-black cursor-pointer'>Resources</div>
-                        <div className='cursor-pointer'>Blog</div>
-                        <div className='cursor-pointer'>Products</div>
-                        <div className='cursor-pointer'>Services</div>
+                        <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Resources</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Blog</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Products</div>
+                        <div className='cursor-pointer hover:text-black duration-200'>Services</div>
                     </div>
                 </div>
             </section>
