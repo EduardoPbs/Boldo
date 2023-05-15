@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+@layer components {
+    .main-input {
+        @apply w-full bg-white/10 text-white border-2 border-white rounded-lg p-2 focus:outline-none focus:border-main-green duration-300 font-light
+    }
+}
