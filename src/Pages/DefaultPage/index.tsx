@@ -6,7 +6,9 @@ const DefaultPage = () => {
         <div className='h-full'>
             <section className='bg-main-blue sm:w-full px-4 sm:py-8 sm:px-24'>
                 <Header />
+                
                 <Outlet />
+                
             </section>
         </div>
     );

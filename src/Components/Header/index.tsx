@@ -1,6 +1,4 @@
 import logo from "Components/Header/assets/logo.png";
-import LoginPage from "Pages/LoginPage";
-import { useState } from "react";
 import { useNavigate } from "react-router";
 
 const Header = () => {
