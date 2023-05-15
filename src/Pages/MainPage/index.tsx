@@ -83,6 +83,8 @@ const MainPage = () => {
                     </div>
                 ))}
             </div>
+           
+
         </>
     );
 };
