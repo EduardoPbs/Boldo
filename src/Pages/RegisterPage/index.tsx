@@ -1,14 +1,15 @@
-import Input from "Components/Input";
 import Button from "Components/Button";
+import Input from "Components/Input";
 import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const RegisterPage = () => {
     return (
-        <div className='flex justify-center font-manrope w-full lg:px-64 xl:px-96 py-16'>
-            <form className='flex flex-col gap-4 sm:justify-between  bg-main-blue px-12 py-3 border-2 border-main-green rounded-xl'>
+        <div className='bg-white'>
+            <form className='flex flex-col gap-4 sm:justify-between px-12 py-3 rounded-xl'>
                 <label className='text-main-green text-2xl font-manrope text-center mb-4 uppercase font-bold border-b-2 border-main-green'>
                     Login
                 </label>
+                <Input text='Name' type='text' placeholder='Nome' />
                 <Input text='Email' type='email' placeholder='Email' />
                 <Input text='Senha' type='password' placeholder='Senha' />
                 <Button primary={true} text='Entrar' />
@@ -23,4 +24,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default RegisterPage;

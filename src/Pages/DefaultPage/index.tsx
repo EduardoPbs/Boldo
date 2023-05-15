@@ -4,9 +4,8 @@ import { Outlet } from "react-router";
 const DefaultPage = () => {
     return (
         <div className='h-full'>
-            <section className='bg-main-blue sm:w-full px-4 sm:py-8 sm:px-24'>
-                <Header />
-                
+            <section className='sm:w-full bg-gray-100'>
+
                 <Outlet />
                 
             </section>

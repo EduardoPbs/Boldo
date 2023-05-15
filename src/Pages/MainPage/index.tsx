@@ -19,8 +19,8 @@ const logos = [
 const MainPage = () => {
     return (
         <>
-            <div className='flex flex-col items-center lg:flex lg:flex-row lg:justify-between w-full '>
-                <div className='sm:w-max mt-24 flex flex-col text-center md:text-left lg:mr-10'>
+            <div className='flex flex-col items-center bg-main-blue lg:flex lg:flex-row lg:justify-between w-full px-24'>
+                <div className='sm:w-max pt-24 flex flex-col text-center md:text-left lg:mr-10'>
                     <h1 className='text-white text-5xl font-manrope '>
                         Save time by building <br /> fast with Boldo Template
                     </h1>
@@ -72,7 +72,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-                <div className='hidden sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full mb-10 mt-16 sm:gap-8'>
+                <div className='hidden sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full pb-10 pt-16 sm:px-24 bg-main-blue'>
                 {logos.map((logo) => (
                     <div key={logo.id}>
                         <img

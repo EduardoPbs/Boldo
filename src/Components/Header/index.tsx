@@ -6,7 +6,7 @@ const Header = () => {
 
 
     return (
-        <header className='md:flex sm:justify-between sm:items-center'>
+        <header className='bg-main-blue px-24 py-8 md:flex sm:justify-between sm:items-center'>
             <div className='flex justify-center'>
                 <img
                     src={logo}
