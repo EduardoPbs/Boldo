@@ -1,9 +1,9 @@
 import logo from "Components/Header/assets/logo.png";
 import { useNavigate } from "react-router";
+import AntdDropdown from "Components/Header/AntdDropdown";
 
 const Header = () => {
     const navigate = useNavigate();
-
 
     return (
         <header className='bg-main-blue px-24 py-8 md:flex sm:justify-between sm:items-center'>
@@ -12,7 +12,7 @@ const Header = () => {
                     src={logo}
                     alt='Imagem logo'
                     className='cursor-pointer px-4 py-6 sm:p-0 mb-4'
-                    onClick={() => navigate('/')}
+                    onClick={() => navigate("/")}
                 />
             </div>
             <div>
@@ -20,31 +20,14 @@ const Header = () => {
                     <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
                         Product
                     </li>
-
                     <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
                         Services
                     </li>
-
                     <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
                         About
                     </li>
-
-                    <li
-                        onClick={() => navigate('/login')}
-                        className='
-                        mt-4 
-                        sm:mt-0 
-                        cursor-pointer font-semibold align-middle
-                        bg-white/95
-                        text-main-blue
-                        px-10
-                        py-2
-                        rounded-full
-                        hover:bg-white
-                        transition
-                    '
-                    >
-                        Log In
+                    <li>
+                        <AntdDropdown/>
                     </li>
                 </ul>
             </div>
