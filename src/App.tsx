@@ -1,7 +1,7 @@
 import Rotas from "./Routes";
 
 const App = () => {
-  return <Rotas />;
-}
+    return <Rotas />;
+};
 
 export default App;

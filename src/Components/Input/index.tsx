@@ -15,7 +15,7 @@ const Input = ({ text, type = "text", placeholder }) => {
                     focus:border-3 
                     duration-300 
                     font-semibold'
-                autoComplete="text"
+                autoComplete='text'
                 type={type}
                 placeholder={placeholder}
             />
