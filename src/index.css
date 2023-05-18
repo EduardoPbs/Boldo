@@ -5,6 +5,10 @@
 
 @layer components {
     .main-input {
-        @apply w-full bg-white/10 text-white border-2 border-white rounded-lg p-2 focus:outline-none focus:border-main-green duration-300 font-light
+        @apply w-full bg-white/10 text-white border-2 border-white rounded-lg p-2 focus:outline-none focus:border-main-green duration-300 font-light;
+    }
+
+    .primary-button {
+        @apply rounded-full px-8 py-5 flex items-center justify-center  text-center font-semibold text-lg !text-main-blue bg-main-green hover:!bg-green-300;
     }
 }

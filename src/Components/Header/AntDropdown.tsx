@@ -20,7 +20,7 @@ const items: MenuProps["items"] = [
     },
 ];
 
-const AntdDropdown = () => (
+const AntDropdown = () => (
     <Dropdown menu={{ items }}>
         <div className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle bg-white/95 text-main-blue px-10 py-2 rounded-full hover:bg-white transition'>
             Log In
@@ -28,4 +28,4 @@ const AntdDropdown = () => (
     </Dropdown>
 );
 
-export default AntdDropdown;
+export default AntDropdown;

@@ -1,4 +1,4 @@
-import Button from "Components/Button";
+import { Button } from "antd";
 import invert_logo from "./assets/invert-logo.png";
 
 const Footer = () => {
@@ -14,9 +14,11 @@ const Footer = () => {
                         <input
                             type='text'
                             placeholder='Your email address'
-                            className=' pl-4 pr-10 py-3 rounded-full outline-none'
+                            className=' pl-4 pr-10 py-2 rounded-full outline-none'
                         />
-                        <Button primary={true} text='Start now' />
+                        <Button type='primary' className='primary-button'>
+                            Start now
+                        </Button>
                     </div>
                 </div>
 
@@ -37,24 +39,48 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row w-full justify-between px-24">
+                    <div className='flex flex-col sm:flex-row w-full justify-between px-24'>
                         <div className='sm:flex flex-col justify-between h-full text-gray-400 font-manrope'>
-                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Landings</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Home</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Products</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Services</div>
+                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>
+                                Landings
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Home
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Products
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Services
+                            </div>
                         </div>
                         <div className='sm:flex flex-col justify-between h-full text-gray-400 font-manrope'>
-                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Company</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Home</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Careers</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Services</div>
+                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>
+                                Company
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Home
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Careers
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Services
+                            </div>
                         </div>
                         <div className='sm:flex flex-col justify-between h-full text-gray-400 font-manrope'>
-                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>Resources</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Blog</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Products</div>
-                            <div className='cursor-pointer hover:text-black duration-200'>Services</div>
+                            <div className='font-bold text-black text-lg cursor-pointer hover:text-gray-400 duration-200'>
+                                Resources
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Blog
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Products
+                            </div>
+                            <div className='cursor-pointer hover:text-black duration-200'>
+                                Services
+                            </div>
                         </div>
                     </div>
                 </div>

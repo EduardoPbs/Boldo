@@ -1,6 +1,6 @@
 import logo from "Components/Header/assets/logo.png";
 import { useNavigate } from "react-router";
-import AntdDropdown from "Components/Header/AntdDropdown";
+import AntDropdown from "Components/Header/AntDropdown";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -16,20 +16,7 @@ const Header = () => {
                 />
             </div>
             <div>
-                <ul className='sm:flex text-white gap-10 font-sans justify-center text-center'>
-                    <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
-                        Product
-                    </li>
-                    <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
-                        Services
-                    </li>
-                    <li className='mt-4 sm:mt-0 cursor-pointer font-semibold align-middle'>
-                        About
-                    </li>
-                    <li>
-                        <AntdDropdown/>
-                    </li>
-                </ul>
+                <AntDropdown />
             </div>
         </header>
     );

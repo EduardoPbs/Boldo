@@ -1,4 +1,4 @@
-import Button from "Components/Button";
+import { Button } from "antd";
 import Hero from "./Hero";
 import graphHorizontal from "./assets/BarsGraphicHorizontal.png";
 import graphVertical from "./assets/BarsGraphVertical.png";
@@ -8,11 +8,11 @@ import boldo from "./assets/BoldoLogo.png";
 import presto from "./assets/PrestoLogo.png";
 
 const logos = [
-    { id: 0, image: boldo  },
+    { id: 0, image: boldo },
     { id: 1, image: presto },
-    { id: 2, image: boldo  },
+    { id: 2, image: boldo },
     { id: 3, image: presto },
-    { id: 4, image: boldo  },
+    { id: 4, image: boldo },
     { id: 5, image: presto },
 ];
 
@@ -33,8 +33,33 @@ const MainPage = () => {
                     </p>
 
                     <div className='flex flex-col sm:flex-row jsutify-center md:justify-normal gap-4 mt-6'>
-                        <Button primary={true} text='Buy template' />
-                        <Button primary={false} text='Explore' />
+                        {/*<Button primary={true} text='Buy template' />
+                        <Button primary={false} text='Explore' /> */}
+                        <Button
+                            type='primary'
+                            className='primary-button'
+                        >
+                            Buy template
+                        </Button>
+                        <Button
+                            type='default'
+                            className='
+                                !text-white 
+                                font-semibold 
+                                text-xl 
+                                rounded-full 
+                                px-8 
+                                py-5
+                                border-2
+                                flex
+                                items-center
+                                justify-center
+                                sm:justify-normal
+                                hover:!border-white
+                            '
+                        >
+                            Explore
+                        </Button>
                     </div>
                 </div>
                 <div className='hidden w-max h-max mt-24 sm:flex sm:flex-col '>
@@ -72,7 +97,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-                <div className='hidden sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full pb-10 pt-16 sm:px-24 bg-main-blue'>
+            <div className='hidden sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full pb-10 pt-16 sm:px-24 bg-main-blue'>
                 {logos.map((logo) => (
                     <div key={logo.id}>
                         <img
@@ -83,8 +108,6 @@ const MainPage = () => {
                     </div>
                 ))}
             </div>
-           
-
         </>
     );
 };

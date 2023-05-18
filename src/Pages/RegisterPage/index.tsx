@@ -1,4 +1,4 @@
-import Button from "Components/Button";
+import { Button } from "antd";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
@@ -46,12 +46,14 @@ const RegisterPage = () => {
                         placeholder='Consfirmar senha'
                     />
                 </div>
-                <Button primary={true} text='Entrar' />
+                <Button
+                    type='primary'
+                    className='primary-button'>
+                    Cadastrar
+                </Button>
                 <Link to='/login' className='text-white w-max'>
                     Ou fazer{" "}
-                    <u className='text-main-green cursor-pointer'>
-                        Log in
-                    </u>
+                    <u className='text-main-green cursor-pointer'>Log in</u>
                 </Link>
             </form>
         </div>

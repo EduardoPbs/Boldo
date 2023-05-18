@@ -1,4 +1,4 @@
-import Button from "Components/Button";
+import { Button } from "antd";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
@@ -19,6 +19,7 @@ const LoginPage = () => {
                 <label className='text-main-green text-2xl font-manrope text-center mb-4 uppercase font-bold border-b-2 border-main-green'>
                     Login
                 </label>
+
                 <div>
                     <label className='text-white'>Email</label>
                     <input
@@ -28,6 +29,7 @@ const LoginPage = () => {
                         placeholder='Email'
                     />
                 </div>
+
                 <div>
                     <label className='text-white'>Senha</label>
                     <input
@@ -37,7 +39,11 @@ const LoginPage = () => {
                         placeholder='Senha'
                     />
                 </div>
-                <Button primary={true} text='Entrar' />
+
+                <Button type='primary' className='primary-button'>
+                    Entrar
+                </Button>
+
                 <Link to='/register' className='text-white w-max'>
                     Ou{" "}
                     <u className='text-main-green cursor-pointer'>
